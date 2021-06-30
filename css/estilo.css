@@ -1,0 +1,814 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1.3;
+    font-family:'Bahnschrift';  
+    
+}
+
+ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+a{
+text-decoration:none;
+}
+
+p{
+line-height: 160%;
+color:#262626;
+font-weight: 400;
+font-size:16px;
+
+}
+
+h1,h2{
+    text-transform:capitalize;
+    margin-bottom: 25px;
+    color:#262626;
+    font-size:52px;
+    font-weight: 700;
+    line-height: 60px;
+}
+h3 {
+    margin-bottom:13px;
+    font-weight: 900;
+    font-size: 27px;
+    color:#fff000;
+}
+
+h5 {
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 27px;
+    color:#fff000;
+}
+
+
+
+.p2{font-size: 14px;
+
+  
+}
+
+
+
+input:focus{
+    outline:none;
+
+}
+
+.img-fluid{
+    width:100%;
+}
+
+.custom-padding{
+    padding: 100px 0;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 0 auto;
+}
+
+
+
+header{
+height: 82px;
+position:fixed;
+top:0;
+left:0;
+width: 100%;
+z-index:3;
+background:#fff;
+transition:all .4s ease-in-out;
+}
+
+header.fixed{
+height:68px;
+box-shadow:0 20px 40px rgba(0 0 0 08);
+}
+
+header.fixed nav {
+    height:68px;
+    padding: 15px 0;
+    
+    }
+
+nav{
+padding:20px 0;
+height: 82px;
+width: 100%;
+transition: all .4s ease-in-out;
+
+}
+
+.navigation-bar ul li{
+ display:inline-block;
+ position: relative;
+ margin: 0 25px;
+
+}
+
+.navigation-bar ul li:last-child{
+    margin-right:0;
+
+}
+
+.navigation-bar ul li a {
+position: relative;
+font-size: 16px;
+color:black;
+font-weight:400;
+text-transform:capitalize;
+transition: all .4s ease-in-out;
+margin-right: 03px;
+}
+
+.navigation-bar ul li a:hover,
+.navigation-bar ul li .active a{
+    color:#fff000;
+   
+}
+
+.burger{
+    width: 20px;
+    cursor:pointer;
+    display:none;
+}
+
+.burger span{
+    display:block;
+    background-color:black;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: margin-botton 0.4s ease-in-out;
+
+}
+
+.burger span:last-child{
+    margin-bottom:0;
+    
+}
+
+.burger:over span {
+margin-bottom: 5px;
+
+}
+
+@media (min-width: 991px){
+    .navigation-bar{
+        display: block !important;
+    }
+}
+@media (max-width: 990px){
+    .burger{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navigation-bar{
+        display: none;
+        text-align: center;
+        position: absolute;
+        left:0;
+        top:68px;
+        width: 100%;
+        background-color:black;
+        padding: 20px 0;
+        z-index:2;}
+
+.navigation-bar ul li{
+display: block;
+margin: 15px 0;
+    }
+
+
+    .navigation-bar ul li a {
+        color:#fff000;
+    }
+}
+.home-wrapper{
+    padding-top:82px;
+    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+   margin-left: 20px;
+   text-align:justify;
+
+}
+
+.home-wrapper .col-left p{
+    width: 400px;
+margin-left: 15px;}
+    
+    
+.home-wrapper .col-left h3 {
+    width: 400px;
+margin-left: 15px;}
+
+.home-wrapper .col-left h1 {
+    width: 400px;
+margin-left: 15px;}
+
+  
+
+@media (min-width: 768px){
+    .home-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+.section-title{
+    width: 100%;
+    text-align: center;
+}
+.section-title p{
+    width: 60%;
+    margin: 0 auto;  
+}
+
+/* projeto*/
+
+.proj-items {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%),1fr));
+    margin-top: 80px;
+}
+
+.proj-items .item {
+    transition:transform 0.4s ease-in-out;
+}
+
+.proj-items .item:hover {
+    transform: scale(1.03);
+}
+
+.proj-content{
+    padding: 25px 30px;
+}
+
+.proj-content p{
+    padding: 15px 0 25px;
+}
+
+.proj-content h4{
+    font-size:28px;
+    text-transform:capitalize;
+    color:#262626;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.projeto li{
+    color: #262626;
+    font-size: 16px;
+
+}
+
+.d-grid{
+    display:grid;
+    grid-gap:20px;
+    }
+    
+    .d-flex {
+        display:-webkit-flex;
+        display: -moz-flex;
+        display:-ms-flex;
+        display:-o-flex;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+/* ensaio */
+h6 {
+    
+    font-size: 100px;
+    text-align: center;
+    color:#262626;
+    margin-top: 20px;
+    background-color:white ;
+    height: 120px;
+    margin-right: 0px;
+    
+       
+    
+}
+
+
+.ensaio p{
+    text-align: center;
+    
+}
+
+
+.descricao{
+    font-family:'Bahnschrift';
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    font-family:'Bahnschrift';
+    
+}
+
+.barreira{
+    clear: both;
+}
+
+
+
+.tb01{
+    float: left;
+    margin-left: 25px;
+    margin-right: 2px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    
+}
+
+.tb02{
+    float: left;
+    margin-left: 3px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+  
+  
+}
+
+
+.tb03{
+    float: left;
+    margin-left: 4px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+
+    
+}
+.tb04{
+    float: left;
+    margin-left: 4px;
+    margin-top: 60px;
+
+    margin-bottom: 0px;
+   
+  
+    
+}
+.tb05{
+    float: left;
+    padding:0 0;
+    margin-left: 2px;
+    margin-right: 0px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+  
+}
+.tb06{
+    float: left;
+    padding:0 0;
+    margin-left: 4px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+.tb07{
+    float: left;
+    padding:0 0;
+    margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 70px;}
+
+.tb08{
+    float: left;
+    padding:0 0;
+    margin-right: 0px;
+    margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+.tb09{
+    float: left;
+    padding:0 0;
+    margin-left:25px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+   
+}
+
+.tb10{
+    float: left;
+    padding:0 0;
+    margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    
+}
+.tb11{
+    float: left;
+    padding:0 0;
+    margin-right:0;
+    margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+
+}
+
+
+
+
+
+/*arte conceitual*/
+
+.mac {
+display: flex;
+margin-left: 270px;
+margin-right: 250px;
+align-items: center;
+margin-bottom: 40px;
+
+}
+
+.mac p{
+    font-size: 13px;
+}
+    
+.man {
+    display: flex;
+    margin-left: 220px;
+    margin-right: 250px;
+    align-items:flex-end;
+    margin-top: 40px;
+    
+    }
+    
+    .man p{
+        font-size: 16px;
+    }
+       
+    .artbrasil{
+        margin-top: 20px;
+    }
+
+    
+.duc {
+    display: flex;
+    margin-left: 280px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.duc p{
+    font-size: 13px;
+}
+
+
+.beyus {
+    display: flex;
+    margin-left: 220px;
+    margin-right: 270px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.beyus p{
+    font-size: 13px;
+}
+
+.kosu{
+    display: flex;
+    margin-left: 280px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.kosu p{
+    font-size: 13px;
+}
+
+
+
+
+.yoko {
+ 
+    display:flex;
+    margin-left: 220px;
+    margin-right: 270px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.yoko p{
+    font-size: 13px;
+}
+
+
+.cildo{
+    display: flex;
+    margin-left: 280px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.cildo p{
+    font-size: 13px;
+}
+
+.barrio {
+    display: flex;
+    margin-left: 220px;
+    margin-right: 270px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.barrio p{
+    font-size: 13px;
+    
+}
+
+.anna{
+    display: flex;
+    margin-left: 280px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.anna p{
+    font-size: 13px;
+    
+}
+
+
+
+/* sobre nós */
+
+
+.nos p{
+    margin-bottom: 20px;
+    
+}
+
+.fabricia {
+   float: left; 
+   margin-left: 20px; 
+   margin-right: 15px;
+ 
+}
+
+.fabricia p{
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+    
+
+    .hudson {
+        float: left; 
+        margin-left: 30px; 
+        margin-right: 15px;
+        }
+     
+     .hudson p{
+         font-size: 10px;
+         text-align: center;
+         pointer-events: none;}
+     
+
+         .cintia {
+            float: left; 
+            margin-left: 30px; 
+            margin-right: 15px;
+        }
+         
+         .cintia p{
+             font-size: 10px;
+             text-align: center;}
+         
+             .leandro {
+                float: left; 
+                margin-left: 30px; 
+                margin-right: 15px;
+                }
+             
+             .leandro p{
+                 font-size: 10px;
+                 text-align: center;}
+             
+                 .vania {
+                    float: left; 
+                    margin-left: 30px; 
+                    margin-right: 15px;
+                    }
+                 
+                 .vania p{
+                     font-size: 10px;
+                     text-align: center;}
+                 
+                     .yan {
+                        float: left; 
+                        margin-left: 30px; 
+                        margin-right: 15px;
+                        }
+                     
+                     .yan p{
+                         font-size: 10px;
+                         text-align: center;}
+                     
+                                                            
+
+/* loja */
+ 
+.loja-items{
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 80%),1fr));
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+
+}
+
+.loja-items .item{
+    
+    background-color: #fff000;
+    
+    
+}
+
+
+
+.loja-icon{
+    width: 55px;
+    height: 55px;
+    background:white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+
+.loja-icon i{
+    font-size:  35px;
+    color: black;
+    margin-top:10px ;
+    
+}
+
+
+.loja-content p{
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px ;
+    text-align: center;
+    
+}
+
+
+
+/* campanha */
+
+
+.campanha-items{
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%),1fr));
+    margin: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:center;
+    
+
+}
+.campanha-items .item1{
+    
+    background-color: black;
+    transition: transform, .4s ease-in-out;
+    color: white;
+     
+}
+
+.text-content1 p{
+    color:white;
+    font-size: 18px;
+    font-family: 'Bahnschrift';
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+      
+}
+
+
+
+.campanha-content p{
+    margin: 16px 0 25px;
+}
+
+
+.campanha-icon{
+    width: 50px;
+    height: 50px;
+    background:white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius:50%;
+}
+
+.campanha-icon i{
+    font-size:  35px;
+    color: black;
+    margin-top:7px ;
+    
+}
+
+
+p{
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+
+
+/* footer / rodapé  */
+
+.rodape{
+    text-align:center;  
+    background-color:black;
+    height:auto;
+}
+
+.p1{
+    color:whitesmoke;
+    opacity: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+
+}
+
+/* contato */
+.sub-col{
+margin-left: 100px;
+}
+
+.r-col{
+    margin-left: 100px;
+  
+}
+
+/* contato  */
+.contact input{
+    border-radius: 5px;
+    border:2px solid #ddd;
+    padding:10px;
+    width: 90%;
+    margin-bottom: 15px;
+   
+}
+
+.contact textarea{
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;   
+  
+}
+
+.contact .submit-btn{
+    display:inline-block;
+    background:black;
+color:white;
+border-radius:50px;
+padding:10px 25px;
+margin-top:20px;}
+
+.contact section h2{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+}
+
+.contact p i{
+    margin-right: 20px;
+    font-size: 22px;
+    
+}
+
+#contact .section-title{
+    margin-bottom: 50px;
+}
